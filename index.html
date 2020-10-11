@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Web API: Quiz</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <link rel = "stylesheet" href="style/style.css">
+    </head>
+    <body>
+        <div class = "track">
+            <a href = "" id = "link">View Highscores</a>
+            <p>Time:<span id ="time">0</span> </p>
+        </div>
+        <div class = "start">
+            <h1>Coding Quiz Challenge</h1>
+            <p>Try to answer the following code-related questions within the time limit. 
+                Keep in mind that incorect answers will penalise your scoretime by ten seconds </p>
+            <button type="button" class="btn btn-primary button">Start</button>
+        </div>
+        <div class = "quiz">
+            <div id = "question1">
+                <h2>Commonly used data types do not include:</h2>
+                <ol>
+                    <li><button type="button" class="btn btn-primary button1 wrong">strings</button></li>
+                    <li><button type="button" class="btn btn-primary button1 wrong">Boleans</button></li>
+                    <li><button type="button" class="btn btn-primary right1">Alerts</button></li>
+                    <li><button type="button" class="btn btn-primary button1 wrong">Numbers</button></li>
+                </ol>
+                
+            </div>
+            <div id = "question2">
+                <h2>The condition in an if/else statement is enclosed within ______</h2>
+                <ol>
+                    <li><button type="button" class="btn btn-primary button2  ">quotes</button></li>
+                    <li><button type="button" class="btn btn-primary right2">curly brackets</button></li>
+                    <li><button type="button" class="btn btn-primary button2  ">parentheses</button></li>
+                    <li><button type="button" class="btn btn-primary button2  ">square brackets</button></li>
+                </ol>
+            </div>
+            <div id = "question3">
+                <h2>Arrays in JavaScript can be used to store</h2>
+                <ol>
+                    <li><button type="button" class="btn btn-primary button3  ">number and strings</button></li>
+                    <li><button type="button" class="btn btn-primary button3  ">other arrays</button></li>
+                    <li><button type="button" class="btn btn-primary button3  ">Boleans</button></li>
+                    <li><button type="button" class="btn btn-primary right3">all the above</button></li>
+                </ol>
+            </div>
+            <div id = "question4">
+                <h2>String values must be enclosed within _____ when being assigned to variables</h2>
+                <ol>
+                    <li><button type="button" class="btn btn-primary button4  ">commas</button></li>
+                    <li><button type="button" class="btn btn-primary button4  ">curly brackets</button></li>
+                    <li><button type="button" class="btn btn-primary right4">quotes</button></li>
+                    <li><button type="button" class="btn btn-primary button4  ">parentheses</button></li>
+                </ol>
+            </div>
+            <div id = "question5">
+                <h2>A very useful tool used during development and debugging for priting content to the debugger is:</h2>
+                <ol>
+                    <li><button type="button" class="btn btn-primary button5">JavaScript</button></li>
+                    <li><button type="button" class="btn btn-primary button5">terminal/ bash</button></li>
+                    <li><button type="button" class="btn btn-primary button5">for loops</button></li>
+                    <li><button type="button" class="btn btn-primary right5">console log</button></li>
+                </ol>
+            </div>
+            <div id = "answers">
+                <p id = "value"></p>
+            </div>
+            <div id = "result">
+                <h3>All done!</h3>
+                <p>Your final score is <sapn id = "s"></sapn></p>
+                 <form>
+                     Enter you initials <input type = "text" id ="initials"/>
+                     <button id = "res" type="button" class="btn btn-primary">Submit</button>                 
+                </form>
+            </div>
+            <div id = "highscore">
+            </div>
+            <div id = "highscore-buttons">
+                <button id = "back" type="button" class="btn btn-primary">Go back</button>
+                <button id = "clear" type="button" class="btn btn-primary">Clear Highscores</button>
+            </div>
+        </div>
+        <script src="script/script.js"></script>
+    </body>
+</html>
