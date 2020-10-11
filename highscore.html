@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Web API: Quiz</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <link rel = "stylesheet" href="style/style.css">
+        <link rel = "stylesheet" href="style/style2.css">
+    </head>
+    <body>
+        <div class = "track">
+             <a href = "index.html" id = "link">Back</a>
+        </div>
+        <div class = "quiz">
+            <div id = "answers">
+                <p id = "value"></p>
+            </div>
+            <div id = "result">
+                <h3>All done!</h3>
+                <p>Your final score is <sapn id = "s"></sapn></p>
+                 <form>
+                     Enter you initials <input type = "text" id ="initials"/>
+                     <button id = "res" type="button" class="btn btn-primary">Submit</button>                 
+                </form>
+            </div>
+            <div id = "highscore">
+                <h1>Highscores</h1>
+            </div>
+            <div id = "highscore-buttons">
+                <button id = "back" type="button" class="btn btn-primary">Go back</button>
+                <button id = "clear" type="button" class="btn btn-primary">Clear Highscores</button>
+            </div>
+        </div>
+        <script src="script/script2.js"></script>
+    </body>
+</html>

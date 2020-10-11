@@ -10,7 +10,7 @@ var back = document.querySelector("#back")
 var s = document.querySelector("#s")
 var clear = document.querySelector("#clear")
 //var a = document.querySelector("#link")
-
+ 
 var question1 = document.querySelector("#question1")
 var question2 = document.querySelector("#question2")
 var question3 = document.querySelector("#question3")
@@ -194,19 +194,24 @@ right5.addEventListener("click",function(){
     
 })
 var p = document.createElement("p")
-var d = document.createElement("p")
+var div= document.querySelector('#highscore')
+//var d = document.createElement("p")
 
 res.addEventListener("click",function(){
     var initials = document.querySelector("#initials")
     var div= document.querySelector('#highscore')
-    var c = document.createElement("p")
-    var inI = localStorage.getItem("Initals: ")
-    var inS = localStorage.getItem("Score: ")
-    p.textContent = initials.value + " " + score
     result.style.display = "none"
     highscore.style.display = "block"
-    localStorage.setItem(initials.value,score)
-    
+    var p;
+    localStorage.setItem(initials.value,score) 
+    var Ob = Object.fromEntries(Object.entries(localStorage).sort(([,a],[,b]) => b - a))
+    var keys = Object.keys(Ob)
+    var values = Object.values(Ob)
+    for(var i = 0; i < keys.length; i++){
+        p = document.createElement("p")
+        p.textContent = (i+1) + "." + keys[i] + " - " + values[i]
+        div.append(p)
+    }
 })
 
 back.addEventListener("click",function(){
@@ -215,12 +220,12 @@ back.addEventListener("click",function(){
     highscore.style.display = "none"
     start.style.display = "block"
     score = 0 
+    alert("Refresh if you want to play again")
 })
 
 clear.addEventListener("click",function(){
+    div.remove(p)
     localStorage.clear()
-    p.textContent = " "  
-    d.textContent = " "
 })
 
 /*a.addEventListener("click",function(){

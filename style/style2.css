@@ -1,0 +1,48 @@
+.track{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  
+  div.track > a{
+     flex:0%;
+    color:purple
+  }
+  
+  div.start > button{
+    background-color: purple;
+  }
+  .quiz{
+    position: absolute;
+    width:40%;
+    left: 30%;
+    top: 10%;
+    display:block;
+  }
+  
+  div.quiz > div > ol > li > button{
+    background-color: purple;
+    height:35px;
+    margin-top:5px;
+  }
+  
+
+  div#result > form > button{
+    background-color: purple;
+    height:33px;
+  }
+  
+  div#highscore-buttons > button{
+    background-color: purple;
+  }
+  
+  
+  #answers{
+    border-top:1px solid black;
+  }
+  
+  div#answers p{
+    text-align: center;
+  }
+  
+   
